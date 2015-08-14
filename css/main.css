@@ -1,0 +1,124 @@
+
+
+html,body{
+    position:relative;
+    min-width: 650px;
+   
+}
+
+
+table#tablo{
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 10 auto;
+    min-width: inherit;
+    min-width: 530px;
+}
+thead{
+    position:  absolute;
+    text-decoration: none;
+    display: block;
+    width: inherit;
+    height: auto;
+    z-index: 1;
+    background: #3c3838;
+    color: white;
+    min-width: 532px;
+       
+}
+.to_top{position:fixed;top:0px;}
+tbody tr td,thead tr th{
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+}
+tbody{
+    position: relative;
+    display: block;
+    margin-top: 1.3em;
+    width:inherit;
+    text-align: center;
+ }
+.arriveIcon{
+    background: url(../icons/arrive.gif) center no-repeat;
+}
+.departureIcon{
+    background: url(../icons/departure.gif) center no-repeat;
+}
+
+
+tr.row:nth-child(2n+2){
+    background-color:#bababa;
+}
+tr.row:hover{
+   background-color:#fcc754;
+}
+
+
+.checkboxes{
+    position: relative;
+    width: inherit;
+    text-align: center;
+}
+input[id="arrive"]:before {
+    content:""; 
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:url(../icons/arrive.gif);
+    }
+input[id="arrive"]:checked:before {
+    box-shadow:0px 0px 5px #0e249e;
+}
+input[id="departure"]:before { 
+    content:""; 
+    display:block;
+    width:20px;
+    height:20px;
+    background:url(../icons/departure.gif);
+ }
+input[id="departure"]:checked:before {
+    box-shadow:0px 0px 6px #0e249e;
+    
+}
+input[type="checkbox"]{
+    margin-left:10px;
+}
+input[type="checkbox"]:checked{
+    margin-left: 8px;
+}
+
+@media screen   and (max-width:1200px){
+        th:nth-child(2) ,  td:nth-child(2){
+            display: none;
+        }
+}
+.win_size{
+    display: none;
+}
+@media screen  and (max-width:1050px){
+    th:nth-child(3){
+        display: none;
+    }
+    th:nth-child(4){
+        display: inline-block;
+    }
+    th:last-child{
+        display: none;
+    }
+    td:last-child{
+        display: none;
+    }
+}
+@media screen  and (max-width:900px){
+      th:nth-last-child(3),td:nth-last-child(3),
+      th:nth-child(1),  td:nth-child(1){
+         width: 50px;
+    }
+    th:nth-child(5),td:nth-child(4){
+        display: none;
+    }
+  }

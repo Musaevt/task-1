@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <script src="bower_components/jquery/dist/jquery.min.js" type="application/javascript"></script>
+        <link href='css/main.css' rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+       
+     </head>
+    <body>
+
+    <div class="checkboxes">
+     <label><input type="checkbox" id="arrive" ><span></span>   </input></label>
+     <label><input type="checkbox" id="departure"><span></span></input></label>
+    </div>
+
+
+        <table id="tablo" border=1 rules="rows">
+
+            <colgroup>
+                <col class="column1"/>
+                <col class="column2"/>
+                <col class="column3"/>
+                <col class="column4"/>
+                <col class="column5"/>
+                <col class="column6"/>
+                <col class="column7"/>
+                <col class="column8"/>            
+            </colgroup>
+            <thead>
+                <tr>
+                                <th>Тип</th>
+                                <th>Авиакомпания</th>
+                                <th>Логотип</th>
+                                <th class="win_size">Лого</th>
+                                <th>Тип судна</th>
+                                <th>Аэропорт</th>
+                                <th>Время</th>
+                                <th>Статус</th>
+                                <th>Примечания</th>
+                </tr>
+            </thead>
+            <tbody>
+             <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>British Airways</td>
+                <td><img src="icons/companies/british%20airways.gif"></td>
+                <td>Airbus</td>
+                <td>Мадрид</td>
+                <td>16.40</td>
+                <td>Посадка окончена</td>
+                <td></td>
+             </tr>
+            <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>Swiss Air</td>
+                <td><img src="icons/companies/swissair.gif"></td>
+                <td>Airbus</td>
+                <td>Гонконг</td>
+                <td>18.30</td>
+                <td>Посадка</td>
+                <td>Выход 5</td>
+             </tr>
+            <tr class="row arrive">
+               <td class="arriveIcon"> </td>
+                <td>Lufthansa</td>
+                <td><img src="icons/companies/lufthansa.gif"></td>
+                <td>Airbus</td>
+                <td>Берлин</td>
+                <td>19.10</td>
+                <td>Летит</td>
+                <td></td>
+             </tr>
+            <tr class="row arrive">
+                <td class="arriveIcon"> </td>
+                <td>United</td>
+                <td><img src="icons/companies/united.gif"></td>
+                <td>Boing</td>
+                <td>Вашингтон</td>
+                <td>19.20</td>
+                <td>Задерживается</td>
+                <td>Опоздание 20 мин.</td>
+             </tr>
+             <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>US Airways</td>
+                <td><img src="icons/companies/usairways.gif"></td>
+                <td>Boing</td>
+                <td>Талин</td>
+                <td>19.50</td>
+                <td>Регистрация</td>
+                <td></td>
+             </tr>
+            <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>Lufthansa</td>
+                <td><img src="icons/companies/lufthansa.gif"></td>
+                <td>Airbus</td>
+                <td>Рим</td>
+                <td>20.00</td>
+                <td>Регистрация</td>
+                <td></td>
+             </tr>
+            <tr class="row arrive">
+               <td class="arriveIcon"> </td>
+                <td>Swiss Air</td>
+                <td><img src="icons/companies/swissair.gif"></td>
+                <td>Airbus</td>
+                <td>Пекин</td>
+                <td>20.20</td>
+                <td>Летит</td>
+                <td></td>
+             </tr>
+            <tr class="row arrive">
+                <td class="arriveIcon"> </td>
+                <td>United</td>
+                <td><img src="icons/companies/united.gif"></td>
+                <td>ИЛ-76</td>
+                <td>Липецк</td>
+                <td>20.40</td>
+                <td>Задерживается</td>
+                <td>Опоздание 4 часа</td>
+             </tr>
+             <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>Swiss Air</td>
+                <td><img src="icons/companies/swissair.gif"></td>
+                <td>Airbus</td>
+                <td>Дублин</td>
+                <td>21.00</td>
+                <td>Регистрация</td>
+                <td></td>
+             </tr>
+            <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>Lufthansa</td>
+                <td><img src="icons/companies/lufthansa.gif"></td>
+                <td>Airbus</td>
+                <td>Пекин</td>
+                <td>21.10</td>
+                <td>Регистрация</td>
+                <td></td>
+             </tr>
+            <tr class="row arrive">
+               <td class="arriveIcon"> </td>
+                <td>United</td>
+                <td><img src="icons/companies/united.gif"></td>
+                <td>Airbus</td>
+                <td>Маями</td>
+                <td>21.15</td>
+                <td>Задерживается</td>
+                <td>Опоздание 20 мин</td>
+             </tr>
+            <tr class="row arrive">
+                <td class="arriveIcon"> </td>
+                <td>United</td>
+                <td><img src="icons/companies/united.gif"></td>
+                <td>Airbus</td>
+                <td>Баку</td>
+                <td>21.20</td>
+                <td>Летит</td>
+                <td></td>
+             </tr>
+             <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>Lufthansa</td>
+                <td><img src="icons/companies/lufthansa.gif"></td>
+                <td>Airbus</td>
+                <td>Венеция</td>
+                <td>21.40</td>
+                <td></td>
+                <td></td>
+             </tr>
+            <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>Swiss Air</td>
+                <td><img src="icons/companies/swissair.gif"></td>
+                <td>Airbus</td>
+                <td>Мадрид</td>
+                <td>22.00</td>
+                <td></td>
+                <td></td>
+             </tr>
+            <tr class="row arrive">
+               <td class="arriveIcon"> </td>
+                <td>Britich Airways</td>
+                <td><img src="icons/companies/british%20airways.gif"></td>
+                <td>Airbus</td>
+                <td>Чикаго</td>
+                <td>22.10</td>
+                <td>Летит</td>
+                <td></td>
+             </tr>
+            <tr class="row arrive">
+                <td class="arriveIcon"> </td>
+                <td>Britich Airways</td>
+                <td><img src="icons/companies/british%20airways.gif"></td>
+                <td>Boing</td>
+                <td>Лондон</td>
+                <td>22.15</td>
+                <td>Летит</td>
+                <td></td>
+             </tr>
+             <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>United</td>
+                <td><img src="icons/companies/united.gif"></td>
+                <td>Airbus</td>
+                <td>Лондон</td>
+                <td>22.20</td>
+                <td></td>
+                <td></td>
+             </tr>
+            <tr class="row departure">
+                <td class="departureIcon"> </td>
+                <td>Swiss Air</td>
+                <td><img src="icons/companies/swissair.gif"></td>
+                <td>Boing</td>
+                <td>Ялта</td>
+                <td>22.30</td>
+                <td></td>
+                <td></td>
+             </tr>
+            <tr class="row arrive">
+               <td class="arriveIcon"> </td>
+                <td>Lufthansa</td>
+                <td><img src="icons/companies/lufthansa.gif"></td>
+                <td>Airbus</td>
+                <td>Манчестер</td>
+                <td>22.40</td>
+                <td>Отменён</td>
+                <td></td>
+             </tr>
+            <tr class="row arrive">
+                <td class="arriveIcon"> </td>
+                <td>US Airways</td>
+                <td><img src="icons/companies/usairways.gif"></td>
+                <td>Boing</td>
+                <td>Кипр</td>
+                <td>23.00</td>
+                <td>Ожидается</td>
+                <td></td>
+             </tr>
+           
+            </tbody>
+        </table>
+       <script src="js/main.js" type="application/javascript"></script>
+    </body>
+</html>
+
