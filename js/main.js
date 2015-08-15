@@ -27,8 +27,15 @@ $('td').hover(over,out);
 //checkboxes show depurture and arrive flights
 function checked_funct(eventObj){
  $('input[type=checkbox]').each(function(num,check){
+     
      var target=$(check);
-     var id=(target.attr('id')=="arrive")?"departure":"arrive";
+     var id;
+      switch(target.attr('id')){
+          case "departure":id="arrive";break;
+          case "arrive" :id="departure";break;
+          default:break;
+      }
+      if(id)
       target.prop("checked")?hide(id,target):show(id,target);
    })
  
