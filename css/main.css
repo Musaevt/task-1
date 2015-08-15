@@ -105,7 +105,7 @@ input[type="checkbox"]:checked{
 }
 
 @media screen   and (max-width:1200px){
-        th:nth-child(2) ,  td:nth-child(2){
+       #tablo th:nth-child(2) , #tablo td:nth-child(2){
             display: none;
         }
 }
@@ -113,25 +113,25 @@ input[type="checkbox"]:checked{
     display: none;
 }
 @media screen  and (max-width:1050px){
-    th:nth-child(3){
+    #tablo th:nth-child(3){
         display: none;
     }
-    th:nth-child(4){
+   #tablo th:nth-child(4){
         display: inline-block;
     }
-    th:last-child{
+   #tablo th:last-child{
         display: none;
     }
-    td:last-child{
+   #tablo  td:last-child{
         display: none;
     }
 }
 @media screen  and (max-width:900px){
-      th:nth-last-child(3),td:nth-last-child(3),
-      th:nth-child(1),  td:nth-child(1){
+     #tablo th:nth-last-child(3),#tablo td:nth-last-child(3),
+     #tablo th:nth-child(1), #tablo td:nth-child(1){
          width: 50px;
     }
-    th:nth-child(5),td:nth-child(4){
+   #tablo th:nth-child(5),#tablo td:nth-child(4){
         display: none;
     }
   }
