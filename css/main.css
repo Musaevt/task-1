@@ -31,7 +31,6 @@ thead{
 }
 .to_top{position:fixed;top:0px;}
 tbody tr td,thead tr th{
-    display: inline-block;
     text-align: center;
     width: 140px;
 }
@@ -44,11 +43,25 @@ tbody{
  }
 .arriveIcon{
     background: url(../icons/arrive.gif) center no-repeat;
+    height: 30px;
+  
 }
 .departureIcon{
     background: url(../icons/departure.gif) center no-repeat;
+    height: 30px;
+  
 }
-
+.checkboxes table{
+    text-align: center;
+    margin: auto;
+}
+.checkboxes table tr{
+    text-align: center;
+   
+}
+.checkboxes table th,.checkboxes table td{
+    width: 150px;
+}
 
 tr.row:nth-child(2n+2){
     background-color:#bababa;
@@ -75,7 +88,7 @@ input[id="arrive"]:checked:before {
 }
 input[id="departure"]:before { 
     content:""; 
-    display:block;
+    display:inline-block;
     width:20px;
     height:20px;
     background:url(../icons/departure.gif);

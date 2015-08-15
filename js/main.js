@@ -4,7 +4,7 @@ function over(Dom_Elem) {
 var index=Dom_Elem.target.cellIndex+1;
     
     if(index)
-        $('td:nth-child('+(index)+')').each(function(id,el){
+        $('#tablo td:nth-child('+(index)+')').each(function(id,el){
                 back_old=$(el).css('background-color');color_old=$(el).css('color');
             
                 $(el).css({'background-color' : back_color,'color':color}); 
@@ -15,12 +15,12 @@ function out(Dom_Elem) {
     var index=Dom_Elem.target.cellIndex+1;
     
     if(index)
-        $('td:nth-child('+(index)+')').each(function(id,el){
+        $('#tablo td:nth-child('+(index)+')').each(function(id,el){
                   $(el).css({'background-color' : back_old,'color':color_old}); 
           }); 
 }
 
-$('td').hover(over,out);
+$('#tablo td').hover(over,out);
 
 
 
